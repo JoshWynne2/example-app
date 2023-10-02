@@ -21,6 +21,6 @@ Route::get('/rat', function () {
 	return "rats rats we're the rats we pray at night we stalk at night we're the rats im the giant rat that makes all of the rules";
 });
 
-Route::get('/hiiii', function () {
+Route::get('/josh', function () {
 	return view('hello');
 });
