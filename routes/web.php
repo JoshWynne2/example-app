@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HelloController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +23,4 @@ Route::get('/rat', function () {
 	return "rats rats we're the rats we pray at night we stalk at night we're the rats im the giant rat that makes all of the rules";
 });
 
-Route::get('/josh', function () {
-	return view('hello');
-});
+Route::get('/hello', [HelloController::class, 'hello']);
